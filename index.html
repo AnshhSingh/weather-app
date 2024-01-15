@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <div id="weather-container">
+        <div>
+            <label for="search-input">Enter City:</label>
+            <input type="text" id="search-input" placeholder="City">
+            <button id="search-btn">Search</button>
+        </div>
+       
+        <img id="icon" src="./sun-solid.svg" alt="Weather Icon">
+        <div id="city"></div>
+        <div id="temperature"></div>
+        <div id="description"></div>
+       
+
+        <div id="forecast-container"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
