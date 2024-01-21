@@ -1,8 +1,5 @@
-<<<<<<< HEAD
+
 const apiKey = import.meta.env.VITE_openapi
-=======
-const apiKey = '';
->>>>>>> 463e5010e0c313f22f02999fe3ae225f262a322b
 
 document.getElementById('search-btn').addEventListener('click', () => {
     const city = document.getElementById('search-input').value;
