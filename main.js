@@ -1,4 +1,4 @@
-const apiKey = '0cc1ce77a7fa887558dc6076b899e31a';
+const apiKey = import.meta.env.VITE_openapi
 
 document.getElementById('search-btn').addEventListener('click', () => {
     const city = document.getElementById('search-input').value;
@@ -6,6 +6,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
 });
 
 function getWeatherData(city) {
+   
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
         .then(response => response.json())
         .then(data => {
